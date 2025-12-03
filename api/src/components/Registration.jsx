@@ -27,7 +27,7 @@ function Registration() {
   };
 
   return (
-    <div className="register-page">
+    <div className="auth-container">
       <h1>Register</h1>
 
       <input
@@ -44,7 +44,7 @@ function Registration() {
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p className="auth-error">{error}</p>}
 
       <button onClick={handleRegister}>Register</button>
     </div>

@@ -19,7 +19,7 @@ function Login() {
   };
 
   return (
-    <div className="login-page">
+    <div className="auth-container">
       <h1>Login</h1>
 
       <input
@@ -36,7 +36,7 @@ function Login() {
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p className="auth-error">{error}</p>}
 
       <button onClick={handleLogin}>Login</button>
     </div>
