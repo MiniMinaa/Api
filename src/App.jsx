@@ -7,7 +7,7 @@ import Login from "./components/Login.jsx";
 
 function App () {
     return(
-    <BrowserRouter>
+    <BrowserRouter basename="/Api/">
         <Routes>
             <Route path="/" element={<Register />} />
             <Route path="/login" element={<Login />} />
